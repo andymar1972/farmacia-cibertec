@@ -1,0 +1,18 @@
+//Configuración
+@import "config/colors";
+@import "config/fonts";
+//Mixins
+@import "mixins/breakpoints";
+@import "mixins/reset-list.scss";
+@import "mixins/hover.scss";
+//Estilos base
+@import "base/normalize";
+@import "base/base";
+//Componentes
+@import "components/main-menu.scss";
+@import "components/buttons.scss";
+@import "components/inputs.scss";
+@import "components/footer.scss";
+//Layouts
+
+//Paginas

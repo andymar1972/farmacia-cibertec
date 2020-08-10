@@ -1,0 +1,13 @@
+@font-face {
+  src: url("../assets/fonts/drescher-grotesk-bold.ttf");
+  font-family: "drescher-bold";
+}
+:root {
+  --main-title: "drescher-bold", sans-serif;
+  --main-font: "drescher-regular", sans-serif;
+  --second-font: "drescher-small", sans-serif;
+}
+
+$main-title: var(--main-title);
+$main-font: var(--main-font);
+$second-font: var(--second-font);
