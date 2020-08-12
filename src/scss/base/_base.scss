@@ -59,3 +59,19 @@ button {
 }
 
 //MINIFRAMEWORK
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon-drop {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: $secondary-color;
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  &--show {
+    transform: rotate(180deg);
+  }
+}

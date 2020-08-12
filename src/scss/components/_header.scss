@@ -1,0 +1,100 @@
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    border-bottom: 0.2rem solid #ccc;
+    & svg {
+      font-size: 3rem;
+      color: $primary-color;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__shopping {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    & span {
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-left: 0.3rem;
+    }
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 0.4s;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+    &--show {
+      &::before {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__logo {
+    width: 8.5rem;
+  }
+  &__nav {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    max-width: 300px;
+    left: 0;
+    background-color: $white;
+    height: 100vh;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    &--show {
+      transform: translateX(0);
+    }
+  }
+  &__login {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-bottom: 0.2rem solid #000;
+    & svg {
+      color: $primary-color;
+      font-size: 3.5rem;
+      margin-right: 1rem;
+    }
+    & a {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+  }
+  &__delivery {
+    display: flex;
+    align-items: center;
+    & svg {
+      font-size: 3rem;
+      color: $primary-color;
+    }
+    & a {
+      margin-left: 0.5rem;
+      font-size: 1.8rem;
+    }
+  }
+}

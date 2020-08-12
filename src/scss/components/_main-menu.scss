@@ -1,0 +1,50 @@
+.main-menu {
+  @include reset-list;
+  padding: 2rem;
+  z-index: 10;
+  &__item {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &--icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__submenu {
+    @include reset-list;
+    margin-left: 1rem;
+    overflow: hidden;
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 1s;
+    &--show {
+      @include reset-list;
+      margin-left: 1rem;
+      overflow: hidden;
+      max-height: 258px;
+      transition-property: max-height;
+      transition-timing-function: linear;
+      transition-duration: 0.4s;
+    }
+  }
+  &__subitem {
+    display: flex;
+    align-items: center;
+    margin-top: 1.3rem;
+    & svg {
+      flex: none;
+      color: $primary-color;
+      width: 3rem !important;
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+    & a {
+      font-size: 1.6rem;
+    }
+  }
+}
