@@ -31,67 +31,80 @@ html(lang="es")
     block title-description
   body
     header.header
-      .header__top.container
-        #bars-menu.header__bars
-          <i class="fas fa-bars"></i>
-        form#search.search(action="" method="post")
-          .search__control 
-            .search__back
-              <i class="fas fa-arrow-left"></i>
-            input.search__input(type="text" name="nombre" placeholder="Buscar productos")
-            button.search__button(type='submit') <i class="fas fa-search"></i>
-          .search__data.container
-            ul#search-data
-              //- li: a(href="#") Panadol
-              //- li: a(href="#") Dioxido de cloro
-              //- li: a(href="#") Hola christopher :v
-              //- li: a(href="#") Hola panadol
-              //- li: a(href="#") Minecraft level rata
-        .header__right
-          #btn-search.header__search
-            <i class="fas fa-search"></i>
-          .header__shopping
-            <i class="fas fa-shopping-cart"></i>
-            span 04
-      #header-main.header__main.container
-        figure.header__logo
-          img(src="assets/img/logoFarmacia.png", alt="logo farmacia cibertec")
-        nav#nav.header__nav
-          .header__login
-            <i class="far fa-user"></i>
-            a(href="login.html") Iniciar sesión
-          ul.main-menu
-            li.main-menu__item: a.main-menu__link(href="index.html") Inicio
-            li.main-menu__item 
-              .main-menu__item--icon Categorias
-                .icon-drop 
-                  <i class="fas fa-caret-down"></i>
-              ul.main-menu__submenu.main-menu__submenu--show
-                li.main-menu__subitem
-                  <i class="fas fa-home"></i>
-                  a.main-menu__link(href="hogar.html") Hogar
-                li.main-menu__subitem
-                  <i class="fas fa-pills"></i>
-                  a.main-menu__link(href="vitaminas-suplementos.html") Vitaminas y suplementos
-                li.main-menu__subitem
-                  <i class="fas fa-baby-carriage"></i>
-                  a.main-menu__link(href="infantil-maternidad.html") Infantil y maternidad
-                li.main-menu__subitem
-                  <i class="fas fa-briefcase-medical"></i>
-                  a.main-menu__link(href="medicina-ortopedia.html") Medicina y ortopedia
-                li.main-menu__subitem
-                  <i class="fas fa-pump-medical"></i>
-                  a.main-menu__link(href="cuidado-personal.html") Cuidado personal
-                li.main-menu__subitem
-                  <i class="fas fa-head-side-mask"></i>
-                  a.main-menu__link(href="proteccion-covid.html") Protección Covid-19
-            li.main-menu__item: a.main-menu__link(href="conocenos.html") Conócenos
-            li.main-menu__item: a.main-menu__link(href="servicios.html") Servicios
-            li.main-menu__item: a.main-menu__link(href="productos.html") Productos
-            li.main-menu__item: a.main-menu__link(href="contacto.html") Contáctanos
-        .header__delivery
-          <i class="fas fa-truck"></i>
-          a(href="tel:+51987654321") 987654321
+      .header__top
+        .header__top--container.container
+          #bars-menu.header__bars
+            <i class="fas fa-bars"></i>
+          .header__delivery--desktop
+            <i class="fas fa-truck"></i>
+            a(href="tel:+51987654321") 987654321
+          .header__redes
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+          form#search.search(action="" method="post")
+            .search__control 
+              .search__back
+                <i class="fas fa-arrow-left"></i>
+              input.search__input(type="text" name="nombre" placeholder="Buscar productos")
+              button.search__button(type='submit') <i class="fas fa-search"></i>
+            .search__data.container
+              ul#search-data
+                //- li: a(href="#") Panadol
+                //- li: a(href="#") Dioxido de cloro
+                //- li: a(href="#") Hola christopher :v
+                //- li: a(href="#") Hola panadol
+                //- li: a(href="#") Minecraft level rata
+          .header__right
+            .header__user
+              a(href="#") Iniciar sesión
+            .header__user
+              a(href="#") Registrate
+            #btn-search.header__search
+              <i class="fas fa-search"></i>
+            .header__shopping
+              <i class="fas fa-shopping-cart"></i>
+              span 04
+      #header-main.header__main
+        .header__main--container.container
+          figure.header__logo
+            img(src="assets/img/logoFarmacia.png", alt="logo farmacia cibertec")
+          nav#nav.header__nav
+            .header__login
+              <i class="far fa-user"></i>
+              a(href="login.html") Iniciar sesión
+            ul.main-menu
+              li.main-menu__item: a.main-menu__link(href="index.html") Inicio
+              li.main-menu__item 
+                .main-menu__item--icon Categorias
+                  .icon-drop 
+                    <i class="fas fa-caret-down"></i>
+                ul.main-menu__submenu
+                  li.main-menu__subitem
+                    <i class="fas fa-home"></i>
+                    a.main-menu__link(href="hogar.html") Hogar
+                  li.main-menu__subitem
+                    <i class="fas fa-pills"></i>
+                    a.main-menu__link(href="vitaminas-suplementos.html") Vitaminas y suplementos
+                  li.main-menu__subitem
+                    <i class="fas fa-baby-carriage"></i>
+                    a.main-menu__link(href="infantil-maternidad.html") Infantil y maternidad
+                  li.main-menu__subitem
+                    <i class="fas fa-briefcase-medical"></i>
+                    a.main-menu__link(href="medicina-ortopedia.html") Medicina y ortopedia
+                  li.main-menu__subitem
+                    <i class="fas fa-pump-medical"></i>
+                    a.main-menu__link(href="cuidado-personal.html") Cuidado personal
+                  li.main-menu__subitem
+                    <i class="fas fa-head-side-mask"></i>
+                    a.main-menu__link(href="proteccion-covid.html") Protección Covid-19
+              li.main-menu__item: a.main-menu__link(href="conocenos.html") Conócenos
+              li.main-menu__item: a.main-menu__link(href="servicios.html") Servicios
+              li.main-menu__item: a.main-menu__link(href="productos.html") Productos
+              li.main-menu__item: a.main-menu__link(href="contacto.html") Contáctanos
+          .header__delivery
+            <i class="fas fa-truck"></i>
+            a(href="tel:+51987654321") 987654321
     block main
     script(src="js/scripts-min.js")
 

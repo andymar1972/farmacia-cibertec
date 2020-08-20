@@ -1,19 +1,60 @@
 .header {
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.5rem;
     border-bottom: 0.2rem solid #ccc;
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6.5rem;
+    }
     & svg {
       font-size: 3rem;
       color: $primary-color;
+    }
+  }
+  &__bars {
+    @include laptop {
+      display: none;
+    }
+  }
+  .header__redes {
+    display: none;
+    @include laptop {
+      margin-left: 2rem;
+      margin-right: 4rem;
+      display: flex;
+      align-items: center;
+      & svg {
+        margin-right: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__user {
+    display: none;
+    @include laptop {
+      display: block;
+      margin-left: 2rem;
+      font-weight: 700;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
   &__right {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include laptop {
+      flex: none;
+    }
+  }
+  &__search {
+    @include laptop {
+      display: none;
+    }
   }
   &__shopping {
     display: flex;
@@ -26,11 +67,16 @@
     }
   }
   &__main {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    align-items: center;
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      align-items: center;
+      @include laptop {
+        justify-content: space-between;
+      }
+    }
     &::before {
       content: "";
       position: fixed;
@@ -69,12 +115,23 @@
     &--show {
       transform: translateX(0);
     }
+    @include laptop {
+      position: static;
+      max-width: 100%;
+      width: auto;
+      overflow: initial;
+      height: auto;
+      transform: translateX(0);
+    }
   }
   &__login {
     display: flex;
     align-items: center;
     padding: 2rem 1.5rem;
     border-bottom: 0.2rem solid #000;
+    @include laptop {
+      display: none;
+    }
     & svg {
       color: $primary-color;
       font-size: 3.5rem;
@@ -95,6 +152,25 @@
     & a {
       margin-left: 0.5rem;
       font-size: 1.8rem;
+    }
+    @include laptop {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+      @include laptop {
+        display: flex;
+        flex: none;
+        align-items: center;
+        & svg {
+          font-size: 3rem;
+          color: $primary-color;
+        }
+        & a {
+          margin-left: 0.5rem;
+          font-size: 1.8rem;
+        }
+      }
     }
   }
 }

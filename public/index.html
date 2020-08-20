@@ -23,61 +23,72 @@
     <meta name="twitter:description" content="Descripción"/>
     <meta name="twitter:image:src" content=""/>
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1597164471567"/>
-    <script src="assets/fontawesome/js/all.min.js?t=1597164471567"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1597328634318"/>
+    <script src="assets/fontawesome/js/all.min.js?t=1597328634318"></script>
     <!--STYLE BASE-->
-    <link rel="stylesheet" href="css/styles.css?t=1597164471567"/>
-    <title>Farmacia Cibertec</title>
+    <link rel="stylesheet" href="css/styles.css?t=1597328634318"/>
+    <title>Farmacia-Cibertec</title>
     <meta name="description" content="Descripccion"/>
   </head>
   <body>
     <header class="header">
-      <div class="header__top container">
-        <div class="header__bars" id="bars-menu"><i class="fas fa-bars"></i></div>
-        <form class="search" id="search" action="" method="post">
-          <div class="search__control"> 
-            <div class="search__back"><i class="fas fa-arrow-left"></i></div>
-            <input class="search__input" type="text" name="nombre" placeholder="Buscar productos"/>
-            <button class="search__button" type="submit"><i class="fas fa-search"></i></button>
+      <div class="header__top">
+        <div class="header__top--container container">
+          <div class="header__bars" id="bars-menu"><i class="fas fa-bars"></i></div>
+          <div class="header__delivery--desktop"><i class="fas fa-truck"></i><a href="tel:+51987654321">987654321</a></div>
+          <div class="header__redes"><i class="fab fa-facebook-square"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="fab fa-instagram-square"></i>
           </div>
-          <div class="search__data container">
-            <ul id="search-data"></ul>
+          <form class="search" id="search" action="" method="post">
+            <div class="search__control"> 
+              <div class="search__back"><i class="fas fa-arrow-left"></i></div>
+              <input class="search__input" type="text" name="nombre" placeholder="Buscar productos"/>
+              <button class="search__button" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search__data container">
+              <ul id="search-data"></ul>
+            </div>
+          </form>
+          <div class="header__right">
+            <div class="header__user"><a href="#">Iniciar sesión</a></div>
+            <div class="header__user"><a href="#">Registrate</a></div>
+            <div class="header__search" id="btn-search"><i class="fas fa-search"></i></div>
+            <div class="header__shopping"><i class="fas fa-shopping-cart"></i><span>04</span></div>
           </div>
-        </form>
-        <div class="header__right">
-          <div class="header__search" id="btn-search"><i class="fas fa-search"></i></div>
-          <div class="header__shopping"><i class="fas fa-shopping-cart"></i><span>04</span></div>
         </div>
       </div>
-      <div class="header__main container" id="header-main">
-        <figure class="header__logo"><img src="assets/img/logoFarmacia.png" alt="logo farmacia cibertec"/></figure>
-        <nav class="header__nav" id="nav">
-          <div class="header__login"><i class="far fa-user"></i><a href="login.html">Iniciar sesión</a></div>
-          <ul class="main-menu">
-            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Inicio</a></li>
-            <li class="main-menu__item"> 
-              <div class="main-menu__item--icon">Categorias
-                <div class="icon-drop">
-                   <i class="fas fa-caret-down"></i></div>
-              </div>
-              <ul class="main-menu__submenu main-menu__submenu--show">
-                <li class="main-menu__subitem"><i class="fas fa-home"></i><a class="main-menu__link" href="hogar.html">Hogar</a></li>
-                <li class="main-menu__subitem"><i class="fas fa-pills"></i><a class="main-menu__link" href="vitaminas-suplementos.html">Vitaminas y suplementos</a></li>
-                <li class="main-menu__subitem"><i class="fas fa-baby-carriage"></i><a class="main-menu__link" href="infantil-maternidad.html">Infantil y maternidad</a></li>
-                <li class="main-menu__subitem"><i class="fas fa-briefcase-medical"></i><a class="main-menu__link" href="medicina-ortopedia.html">Medicina y ortopedia</a></li>
-                <li class="main-menu__subitem"><i class="fas fa-pump-medical"></i><a class="main-menu__link" href="cuidado-personal.html">Cuidado personal</a></li>
-                <li class="main-menu__subitem"><i class="fas fa-head-side-mask"></i><a class="main-menu__link" href="proteccion-covid.html">Protección Covid-19</a></li>
-              </ul>
-            </li>
-            <li class="main-menu__item"><a class="main-menu__link" href="conocenos.html">Conócenos</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="servicios.html">Servicios</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="productos.html">Productos</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="contacto.html">Contáctanos</a></li>
-          </ul>
-        </nav>
-        <div class="header__delivery"><i class="fas fa-truck"></i><a href="tel:+51987654321">987654321</a></div>
+      <div class="header__main" id="header-main">
+        <div class="header__main--container container">
+          <figure class="header__logo"><img src="assets/img/logoFarmacia.png" alt="logo farmacia cibertec"/></figure>
+          <nav class="header__nav" id="nav">
+            <div class="header__login"><i class="far fa-user"></i><a href="login.html">Iniciar sesión</a></div>
+            <ul class="main-menu">
+              <li class="main-menu__item"><a class="main-menu__link" href="index.html">Inicio</a></li>
+              <li class="main-menu__item"> 
+                <div class="main-menu__item--icon">Categorias
+                  <div class="icon-drop">
+                     <i class="fas fa-caret-down"></i></div>
+                </div>
+                <ul class="main-menu__submenu">
+                  <li class="main-menu__subitem"><i class="fas fa-home"></i><a class="main-menu__link" href="hogar.html">Hogar</a></li>
+                  <li class="main-menu__subitem"><i class="fas fa-pills"></i><a class="main-menu__link" href="vitaminas-suplementos.html">Vitaminas y suplementos</a></li>
+                  <li class="main-menu__subitem"><i class="fas fa-baby-carriage"></i><a class="main-menu__link" href="infantil-maternidad.html">Infantil y maternidad</a></li>
+                  <li class="main-menu__subitem"><i class="fas fa-briefcase-medical"></i><a class="main-menu__link" href="medicina-ortopedia.html">Medicina y ortopedia</a></li>
+                  <li class="main-menu__subitem"><i class="fas fa-pump-medical"></i><a class="main-menu__link" href="cuidado-personal.html">Cuidado personal</a></li>
+                  <li class="main-menu__subitem"><i class="fas fa-head-side-mask"></i><a class="main-menu__link" href="proteccion-covid.html">Protección Covid-19</a></li>
+                </ul>
+              </li>
+              <li class="main-menu__item"><a class="main-menu__link" href="conocenos.html">Conócenos</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="servicios.html">Servicios</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="productos.html">Productos</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="contacto.html">Contáctanos</a></li>
+            </ul>
+          </nav>
+          <div class="header__delivery"><i class="fas fa-truck"></i><a href="tel:+51987654321">987654321</a></div>
+        </div>
       </div>
     </header>
-    <script src="js/scripts-min.js?t=1597164471567"></script>
+    <script src="js/scripts-min.js?t=1597328634318"></script>
   </body>
 </html>

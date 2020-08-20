@@ -15,16 +15,28 @@ mainHeader.addEventListener("click", (e) => {
   if (e.target.id == "header-main") {
     nav.classList.remove("header__nav--show");
     search.classList.remove("search--show");
+    search.nombre.blur();
     mainHeader.classList.remove("header__main--show");
   }
 });
 
-itemMenu.addEventListener("click", () => {
-  itemMenu.nextElementSibling.classList.toggle("main-menu__submenu--show");
-  itemMenu.lastElementChild.classList.toggle("icon-drop--show");
+const mql = matchMedia("(min-width: 1280px)");
+const applyMatchMedia = (mql) => {
+  if (!mql.matches) {
+    itemMenu.addEventListener("click", () => {
+      itemMenu.nextElementSibling.classList.toggle("main-menu__submenu--show");
+      itemMenu.lastElementChild.classList.toggle("icon-drop--show");
+    });
+  }
+};
+addEventListener("resize", () => {
+  applyMatchMedia(mql);
+});
+addEventListener("DOMContentLoaded", () => {
+  applyMatchMedia(mql);
 });
 
-iconSearch.addEventListener("click", (e) => {
+iconSearch.addEventListener("click", () => {
   search.classList.add("search--show");
   search.nombre.focus();
   mainHeader.classList.add("header__main--show");
