@@ -32,7 +32,9 @@
     overflow: hidden;
     max-height: 0;
     transition-property: max-height;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    background-color: $white;
     @include laptop {
       position: absolute;
       left: 50%;
@@ -55,7 +57,7 @@
       max-height: 258px;
       transition-property: max-height;
       transition-timing-function: linear;
-      transition-duration: 0.4s;
+      transition-duration: 0.3s;
     }
   }
   &__subitem {

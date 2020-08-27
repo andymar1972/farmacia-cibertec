@@ -2,5 +2,14 @@ extends ../templates/template
 block title-description
   title Farmacia-Cibertec
   meta(name="description" content="Descripccion")
+block banner
+  .banner
+    .banner__slider
+      figure.banner__img  
+        img(srcset=`${img}banner.jpg 480w, ${img}banner-tablet.jpg 900w, ${img}banner-desktop.jpg 1024w` " alt=`imagen`)
+    button.banner__prev
+      <i class="fas fa-angle-left"></i>
+    button.banner__next
+      <i class="fas fa-angle-right"></i>
 block main
   

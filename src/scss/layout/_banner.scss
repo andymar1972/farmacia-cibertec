@@ -1,0 +1,26 @@
+.banner {
+  position: relative;
+  &__img {
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    background-color: $white;
+    color: $secondary-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+  }
+  &__prev {
+    left: 0.5rem;
+  }
+  &__next {
+    right: 0.5rem;
+  }
+}
