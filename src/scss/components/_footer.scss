@@ -20,7 +20,7 @@
     gap: 3rem;
     @include laptop{
       display: grid;
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(3,1fr);
       padding-bottom: 7rem;
     }
   }

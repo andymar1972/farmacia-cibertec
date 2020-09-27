@@ -1,0 +1,14 @@
+.form-login {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  &__group {
+    &--checkbox {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__button {
+    
+  }
+}

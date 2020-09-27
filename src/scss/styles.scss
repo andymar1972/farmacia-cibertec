@@ -19,6 +19,7 @@
 @import "components/footer.scss";
 @import "components/social-networks";
 @import "components/credits";
+@import "components/forms";
 //Layouts
 @import "layout/banner";
 @import "layout/categories-layout";
@@ -26,3 +27,4 @@
 @import "layout/recommended-layout";
 @import "layout/location-layout";
 //Pages
+@import "pages/login-page";

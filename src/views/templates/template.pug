@@ -67,8 +67,9 @@ html(lang="es")
               span 04
       #header-main.header__main
         .header__main--container.container
-          figure.header__logo
-            img(src="assets/img/logoFarmacia.png", alt="logo farmacia cibertec")
+          a(href="index.html").header__logo
+            figure
+              img(src="assets/img/logoFarmacia.png", alt="logo farmacia cibertec")
           nav#nav.header__nav
             .header__login
               <i class="far fa-user"></i>
@@ -110,10 +111,10 @@ html(lang="es")
     footer.footer.section
       .footer__container.container
         .footer__grid
-          .footer__item
-            figure.footer__logo
-              img(src=`${img}logoFarmacia.png`, alt="logo farmacia")
-            p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque corporis aperiam delectus odit ducimus est, minus quia commodi
+          //- .footer__item
+          //-   figure.footer__logo
+          //-     img(src=`${img}logoFarmacia.png`, alt="logo farmacia")
+          //-   p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque corporis aperiam delectus odit ducimus est, minus quia commodi
           .footer__item
             h3.footer__title Links
             ul.footer__list
@@ -124,7 +125,7 @@ html(lang="es")
               li.footer__link: a(href="#") Productos
               li.footer__link: a(href="#") Contactenos
           .footer__item
-            h3.footer__title Suscripcción
+            h3.footer__title Suscripción
             p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
             form.footer__form(action="#", method="post")
               input.input(type="text" placeholder="Correo electronico")

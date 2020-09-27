@@ -4,15 +4,18 @@ block title-description
   meta(name="description" content="Descripccion")
 block main
   main.main
-    form.login-page.section
+    form#form-login.login-page.section(action="#" method="POST")
       .login-page__container.container
         h2.title Iniciar Sesión
         .form-login
-          .form__group
-            label(for="user") Usuario
+          .form-login__group
+            label.label(for="login-user") Usuario
             input#login-user.input(type="text" name="user" placeholder="Usuario")
-          .form__group
-            label(for="password") Contraseña
-            input#login-password.input(type="text" name="password" placeholder="Usuario")
-          .form__group
-            input.button-long(type="submit", value="Iniciar sesión")
+          .form-login__group
+            label.label(for="login-password") Contraseña
+            input#login-password.input(type="password" name="password" placeholder="Contraseña")
+          .form-login__group.form-login__group--checkbox
+            input.checkbox#login-check(type="checkbox" name="check")
+            label.label.label--checkbox(for="login-check") Recordar usuario
+          .form-login__group
+            input.form-login__button.button(type="submit", value="Iniciar sesión")
