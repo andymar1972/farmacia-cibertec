@@ -1,0 +1,13 @@
+.credits {
+  margin-top: 2rem;
+  background-color: rgb(221, 221, 221);
+  padding: 2rem 0;
+  &__paragraph {
+    text-align: center;
+    margin: 0;
+    & a {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}

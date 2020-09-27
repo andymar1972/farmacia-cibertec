@@ -1,0 +1,18 @@
+extends ../templates/template
+block title-description
+  title Farmacia-Cibertec | Iniciar sesión
+  meta(name="description" content="Descripccion")
+block main
+  main.main
+    form.login-page.section
+      .login-page__container.container
+        h2.title Iniciar Sesión
+        .form-login
+          .form__group
+            label(for="user") Usuario
+            input#login-user.input(type="text" name="user" placeholder="Usuario")
+          .form__group
+            label(for="password") Contraseña
+            input#login-password.input(type="text" name="password" placeholder="Usuario")
+          .form__group
+            input.button-long(type="submit", value="Iniciar sesión")

@@ -1,0 +1,21 @@
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  @include laptop{
+    justify-content: space-between;
+  }
+  &__item {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.5rem;
+    border: 0.1rem solid $primary-color;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    @include laptop{
+      @include btn-hover($primary-color,#fff,.5s,1);
+    }
+  }
+}

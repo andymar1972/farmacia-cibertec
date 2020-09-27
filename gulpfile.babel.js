@@ -87,6 +87,7 @@ gulp.task("sass", () => {
         outputStyle: "compressed",
       })
     )
+    .pipe(postcss(cssPlugins))
     .pipe(gulp.dest("./public/css"))
     .pipe(stream());
 });

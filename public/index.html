@@ -24,10 +24,10 @@
     <meta name="twitter:description" content="Descripción"/>
     <meta name="twitter:image:src" content=""/>
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1598370559733"/>
-    <script src="assets/fontawesome/js/all.min.js?t=1598370559733"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1601221869158"/>
+    <script src="assets/fontawesome/js/all.min.js?t=1601221869158"></script>
     <!--STYLE BASE-->
-    <link rel="stylesheet" href="css/styles.css?t=1598370559733"/>
+    <link rel="stylesheet" href="css/styles.css?t=1601221869158"/>
     <title>Farmacia-Cibertec</title>
     <meta name="description" content="Descripccion"/>
   </head>
@@ -92,11 +92,228 @@
     </header>
     <div class="banner">
       <div class="banner__slider">
-        <figure class="banner__img"> <img srcset="assets/img/banner.jpg 480w, assets/img/banner-tablet.jpg 900w, assets/img/banner-desktop.jpg 1024w" sizes="(max-width: 480px) 440px, (max-width: 900px) 860px, 1024px" alt="imagen"/></figure>
+        <picture class="banner__img"> 
+          <source media="(max-width: 480px)" srcset="assets/img/banner.jpg"/>
+          <source media="(max-width: 900px)" srcset="assets/img/banner-tablet.jpg"/><img src="assets/img/banner-desktop.jpg" alt=""/>
+        </picture>
       </div>
       <button class="banner__prev"><i class="fas fa-angle-left"></i></button>
       <button class="banner__next"><i class="fas fa-angle-right"></i></button>
     </div>
-    <script src="js/scripts-min.js?t=1598370559733"></script>
+    <section class="categories-layout section">
+      <div class="categories__container container">
+        <h2 class="title">Categorias</h2>
+        <p class="subtitle">Busque con facilidad nuestros productos mediante categorias</p>
+        <div class="categories-layout__grid"><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-home"></i></div><span class="card-category__title">Hogar</span></a><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-pills"></i></div><span class="card-category__title">Vitaminas y suplementos</span></a><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-baby-carriage"></i></div><span class="card-category__title">Infantil y maternidad</span></a><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-briefcase-medical"></i></div><span class="card-category__title">Medicina y ortopedia</span></a><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-pump-medical"></i></div><span class="card-category__title">Cuidado personal</span></a><a class="card-category" href="#">
+            <div class="card-category__icon"><i class="fas fa-head-side-mask"></i></div><span class="card-category__title">Protección Covid-19</span></a></div>
+      </div>
+    </section>
+    <section class="promotions-layout section">
+      <div class="promotions__container container">
+        <h2 class="title">Promociones</h2>
+        <p class="subtitle">Tenemos las mejores promociones para ti</p>
+        <div class="promotions-layout__grid"><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a>
+        </div><a class="promotions-layout__button button-long" href="#">Ver más promociones <i class="fas fa-chevron-circle-right"></i></a>
+      </div>
+    </section>
+    <section class="recommended-layout section">
+      <div class="recommended__container container">
+        <h2 class="title">Recomendados</h2>
+        <p class="subtitle">Tenemos las mejores recomendaciones para ti</p>
+        <div class="recommended-layout__grid"><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a><a href="#">
+            <article class="card-product">
+              <figure class="card-product__img"><img src="assets/img/product.jpg" alt="producto"/></figure>
+              <p class="card-product__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</p><span class="card-product__price">S/<span>17.41</span></span>
+              <p class="card-product__stock"><span>366</span> unidades</p>
+            </article></a>
+        </div><a class="recommended-layout__button button-long" href="#">
+          Ver más recomendaciones <i class="fas fa-chevron-circle-right"></i></a>
+      </div>
+    </section>
+    <section class="location-layout section">
+      <div class="location__container container">
+        <h2 class="title">Ubícanos</h2>
+      </div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0248896585254!2d-79.0208781852198!3d-8.098943794169323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d89f9a6a815%3A0x813002e20fc27bd4!2sITN%20-%20CIBERTEC!5e0!3m2!1ses!2spe!4v1599096338630!5m2!1ses!2spe" class="location-layout__map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <footer class="footer section">
+      <div class="footer__container container">
+        <div class="footer__grid">
+          <div class="footer__item">
+            <figure class="footer__logo"><img src="assets/img/logoFarmacia.png" alt="logo farmacia"/></figure>
+            <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque corporis aperiam delectus odit ducimus est, minus quia commodi</p>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Links</h3>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">Inicio</a></li>
+              <li class="footer__link"><a href="#">Categorias</a></li>
+              <li class="footer__link"><a href="#">Conocenos</a></li>
+              <li class="footer__link"><a href="#">Servicios</a></li>
+              <li class="footer__link"><a href="#">Productos</a></li>
+              <li class="footer__link"><a href="#">Contactenos</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Suscripcción</h3>
+            <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias</p>
+            <form class="footer__form" action="#" method="post">
+              <input class="input" type="text" placeholder="Correo electronico"/>
+              <input class="button" type="submit" value="Enviar"/>
+            </form>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Redes sociales</h3>
+            <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="footer__networks social-networks"><a class="social-networks__item" href="#"><i class="fab fa-facebook-f"></i></a><a class="social-networks__item" href="#"><i class="fab fa-instagram"></i></a><a class="social-networks__item" href="#"><i class="fab fa-twitter"></i></a><a class="social-networks__item" href="#"><i class="fab fa-youtube"></i></a><a class="social-networks__item" href="#"><i class="fab fa-linkedin-in"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="credits">
+        <div class="credits__container container">
+          <p class="credits__paragraph">Desarrollado por <a href="#">TeamCibertec</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts-min.js?t=1601221869158"></script>
   </body>
 </html>

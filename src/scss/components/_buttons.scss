@@ -1,0 +1,44 @@
+.button{
+  display: inline-block;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 1.8rem 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  @include laptop{
+    cursor: pointer;
+  }
+}
+.button-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 1.8rem 0rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  @include tablet {
+    max-width: 31rem;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  @include laptop {
+    background-color: transparent;
+    color: $secondary-color;
+    cursor: pointer;
+    border: 0.1rem solid $secondary-color;
+    @include btn-hover($secondary-color, #fff, 0.5s, 1);
+  }
+  & svg {
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+}

@@ -107,6 +107,46 @@ html(lang="es")
             a(href="tel:+51987654321") 987654321
     block banner
     block main
+    footer.footer.section
+      .footer__container.container
+        .footer__grid
+          .footer__item
+            figure.footer__logo
+              img(src=`${img}logoFarmacia.png`, alt="logo farmacia")
+            p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque corporis aperiam delectus odit ducimus est, minus quia commodi
+          .footer__item
+            h3.footer__title Links
+            ul.footer__list
+              li.footer__link: a(href="#") Inicio
+              li.footer__link: a(href="#") Categorias
+              li.footer__link: a(href="#") Conocenos
+              li.footer__link: a(href="#") Servicios
+              li.footer__link: a(href="#") Productos
+              li.footer__link: a(href="#") Contactenos
+          .footer__item
+            h3.footer__title Suscripcción
+            p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            form.footer__form(action="#", method="post")
+              input.input(type="text" placeholder="Correo electronico")
+              input.button(type="submit", value="Enviar")
+          .footer__item
+            h3.footer__title Redes sociales
+            p.footer__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            .footer__networks.social-networks
+              a(href="#").social-networks__item
+                <i class="fab fa-facebook-f"></i>
+              a(href="#").social-networks__item
+                <i class="fab fa-instagram"></i>
+              a(href="#").social-networks__item
+                <i class="fab fa-twitter"></i>
+              a(href="#").social-networks__item
+                <i class="fab fa-youtube"></i>
+              a(href="#").social-networks__item
+                <i class="fab fa-linkedin-in"></i>
+      .credits
+        .credits__container.container
+          p.credits__paragraph Desarrollado por 
+            a(href="#") TeamCibertec
     script(src="js/scripts-min.js")
 
 

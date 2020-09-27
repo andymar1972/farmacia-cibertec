@@ -1,2 +1,8 @@
-mixin boton (url,texto)
-  a(href=url target="_blank")= texto
+mixin card-product 
+  a(href="#")
+    article.card-product
+      figure.card-product__img
+        img(src=`${img}product.jpg`, alt="producto")
+      p.card-product__title Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo
+      span.card-product__price S/<span>17.41</span>
+      p.card-product__stock <span>366</span> unidades

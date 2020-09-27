@@ -1,4 +1,4 @@
-@mixin btn-hover($colorFondo, $color, $duration, $scale: 1.5) {
+@mixin btn-hover($colorFondo:transparent, $color:#000, $duration:.5s, $scale: 1.03) {
   transition-property: background-color, color, transform;
   transition-duration: $duration;
   &:hover {

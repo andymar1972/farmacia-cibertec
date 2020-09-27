@@ -5,11 +5,67 @@ block title-description
 block banner
   .banner
     .banner__slider
-      figure.banner__img  
-        img(srcset=`${img}banner.jpg 480w, ${img}banner-tablet.jpg 900w, ${img}banner-desktop.jpg 1024w` " alt=`imagen`)
+      picture.banner__img  
+        source(media=`(max-width: 480px)` srcset=`${img}banner.jpg`)
+        source(media=`(max-width: 900px)` srcset=`${img}banner-tablet.jpg`)
+        img(src=`${img}banner-desktop.jpg`, alt="")
     button.banner__prev
       <i class="fas fa-angle-left"></i>
     button.banner__next
       <i class="fas fa-angle-right"></i>
 block main
+  section.categories-layout.section
+    .categories__container.container
+      h2.title Categorias
+      p.subtitle Busque con facilidad nuestros productos mediante categorias
+      .categories-layout__grid
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-home"></i>
+          span.card-category__title Hogar
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-pills"></i>
+          span.card-category__title Vitaminas y suplementos
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-baby-carriage"></i>
+          span.card-category__title Infantil y maternidad
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-briefcase-medical"></i>
+          span.card-category__title Medicina y ortopedia
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-pump-medical"></i>
+          span.card-category__title Cuidado personal
+        a(href="#").card-category
+          .card-category__icon
+            <i class="fas fa-head-side-mask"></i>
+          span.card-category__title Protección Covid-19
+  section.promotions-layout.section
+    .promotions__container.container
+      h2.title Promociones
+      p.subtitle Tenemos las mejores promociones para ti
+      .promotions-layout__grid
+        - let n = 0;
+          while n < 14
+            +card-product
+            - n++
+      a(href="#").promotions-layout__button.button-long Ver más promociones <i class="fas fa-chevron-circle-right"></i>
+  section.recommended-layout.section
+    .recommended__container.container
+      h2.title Recomendados
+      p.subtitle Tenemos las mejores recomendaciones para ti
+      .recommended-layout__grid
+        - let o = 0;
+          while o < 14
+            +card-product
+            - o++
+      a(href="#").recommended-layout__button.button-long Ver más recomendaciones 
+        <i class="fas fa-chevron-circle-right"></i>
+  section.location-layout.section
+    .location__container.container
+      h2.title Ubícanos
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0248896585254!2d-79.0208781852198!3d-8.098943794169323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d89f9a6a815%3A0x813002e20fc27bd4!2sITN%20-%20CIBERTEC!5e0!3m2!1ses!2spe!4v1599096338630!5m2!1ses!2spe" class="location-layout__map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   

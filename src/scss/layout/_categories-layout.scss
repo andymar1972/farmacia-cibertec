@@ -1,0 +1,10 @@
+.categories-layout {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    @include laptop{
+      grid-auto-rows: 18rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 4rem;
+  @include laptop{
+    padding-top: 10rem;
+  }
+  &__logo {
+    width: 10rem;
+  }
+  &__title {
+    margin: 0;
+    font-size: 3rem;
+    color: $primary-color;
+  }
+  &__paragraph {
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+  &__grid{
+    display: grid;
+    gap: 3rem;
+    @include laptop{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding-bottom: 7rem;
+    }
+  }
+  &__list {
+    @include reset-list;
+  }
+  &__link {
+    margin-top: 1.5rem;
+  }
+  &__form {
+    & .button{
+      margin-top: 1.5rem;
+    }
+  }
+  &__networks{
+    margin-top: 2.5rem;
+  }
+}
