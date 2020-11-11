@@ -1,0 +1,48 @@
+.product-cart {
+  display: flex;
+  &__checkbox {
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    margin-right: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__img {
+    flex: 1;
+    margin-right: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  &__data {
+    flex: 2;
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-clamp: 2;
+  }
+  &__condition {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    margin-top: 0.1rem;
+  }
+  &__price {
+    margin: 0;
+    margin-right: 2rem;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  &__quantity {
+    padding: 0.6rem;
+  }
+}

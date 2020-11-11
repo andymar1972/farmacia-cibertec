@@ -5,12 +5,19 @@ block title-description
 block main
   .cart-page.section
     .cart-page__container.container
-      h2.cart-page__title.title Carrito de compras <span>(2)</span>
-      form(action="")
-        a(href="#")
-          article.product-cart
-            figure
-              img(src=`${img}`, alt="")
-          
-      
-
+      h2.cart-page__title.title Carrito de compras <span>(4)</span>
+      form.cart-page__form(action="")
+        +product-cart
+        +product-cart
+        +product-cart
+        +product-cart
+        .cart-page__fixed
+          .container
+            .cart-page__all
+              input(type="checkbox", name="")
+              span Todo
+            .cart-page__wrap
+              p.cart-page__price
+                span S/
+                span 10.00
+              button.cart-page__button(type="submit") Pagar <span>(0)</span>

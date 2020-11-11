@@ -12,12 +12,25 @@ UI States
   :read-only
   :read-write
 */
-.input{
-
+.input {
   display: block;
   width: 100%;
   padding: 1.5rem;
-  border: .1rem solid rgb(163, 163, 163);
-  border-radius: .5rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 0.5rem;
+}
 
+.input-number {
+  display: flex;
+  border-radius: 2rem;
+  overflow: hidden;
+  &__button {
+    border: 0.1rem solid #ccc;
+    font-size: 1.4rem;
+  }
+  & input {
+    border-radius: 0;
+    border: 0.1rem solid #ccc;
+    text-align: center;
+  }
 }
