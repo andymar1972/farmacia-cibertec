@@ -14,7 +14,7 @@
     position: relative;
     overflow: hidden;
     transition-property: color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     &::before {
       content: "";
       position: absolute;
@@ -68,6 +68,8 @@
     padding: 0 1rem;
   }
   &__title {
+    font-family: $main-title;
+    font-weight: 700;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -78,8 +80,48 @@
     display: block;
     font-weight: 700;
     font-size: 1.8rem;
+    color: $primary-color;
   }
   &__stock {
     color: rgb(136, 136, 136);
+  }
+}
+.card-cart {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  @include laptop {
+    padding: 2.5rem;
+  }
+  &__title {
+    font-weight: 700;
+    font-family: $main-title;
+    font-size: 2.4rem;
+  }
+  &__details {
+    @include reset-list;
+    margin-top: 2.5rem;
+    & li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      align-items: center;
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &:last-of-type {
+        border-top: 0.1rem solid #ccc;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+  &__price {
+    font-size: 2.2rem;
+    color: $primary-color;
+    font-weight: 700;
+  }
+  &__button {
+    width: 100%;
+    margin-top: 2rem;
   }
 }

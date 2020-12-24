@@ -1,5 +1,11 @@
 .product-cart {
   display: flex;
+  background-color: #fff;
+  padding: 1.3rem 1rem;
+  border-radius: 0.5rem;
+  @include laptop {
+    padding: 2rem;
+  }
   &__checkbox {
     flex: none;
     width: 2rem;
@@ -10,10 +16,15 @@
     overflow: hidden;
   }
   &__img {
-    flex: 1;
+    flex: none;
+    width: 10rem;
     margin-right: 1rem;
     overflow: hidden;
     border-radius: 0.5rem;
+    @include tablet {
+      width: 15rem;
+      flex: none;
+    }
   }
   &__data {
     flex: 2;
@@ -26,15 +37,26 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     line-clamp: 2;
+    font-family: $main-title;
+    @include laptop {
+      font-size: 2rem;
+    }
   }
   &__condition {
     margin: 0;
     margin-top: 0.5rem;
+    @include laptop {
+      margin-top: 1rem;
+    }
   }
   &__flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 0.1rem;
+    @include laptop {
+      margin-top: 0.5rem;
+    }
   }
   &__price {
     margin: 0;
@@ -44,5 +66,15 @@
   }
   &__quantity {
     padding: 0.6rem;
+    width: 4rem;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    -moz-appearance: textfield;
+    @include laptop {
+      width: 5rem;
+    }
   }
 }

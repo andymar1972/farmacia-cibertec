@@ -53,6 +53,3 @@ search.addEventListener("submit", (e) => {
     .then((res) => (res.ok ? Promise.resolve(res) : Promise.reject(res)))
     .then((res) => res.json());
 });
-search.nombre.addEventListener("input", (e) => {
-  console.log(e.target.value.trim());
-});

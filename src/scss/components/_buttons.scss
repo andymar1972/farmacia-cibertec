@@ -7,9 +7,10 @@
   font-weight: 700;
   border: none;
   border-radius: 0.5rem;
+  outline: none;
   @include laptop {
     cursor: pointer;
-    @include btn-hover($primary-color,#fff,.5s,1);
+    @include btn-hover($primary-color, #fff, 0.5s, 1);
   }
 }
 .button-long {

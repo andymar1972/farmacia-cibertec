@@ -9,6 +9,9 @@
   &__item {
     font-size: 1.8rem;
     margin-top: 2rem;
+    font-family: $main-title;
+    font-weight: 700;
+    color: rgb(75, 75, 75);
     @include laptop {
       margin-top: 0;
       margin-left: 6rem;

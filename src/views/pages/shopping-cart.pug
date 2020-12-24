@@ -1,23 +1,27 @@
-extends ../templates/template
+extends ../templates/template2
 block title-description
   title Farmacia-Cibertec | Carrito Compras
   meta(name="description" content="Descripccion")
 block main
-  .cart-page.section
+  .cart-page.section.section--bottom
     .cart-page__container.container
-      h2.cart-page__title.title Carrito de compras <span>(4)</span>
+      .cart-page__select
+        h2.cart-page__title.title Carrito de compras <span>(4)</span>
+        div.cart-page__all
+          input#select-all(type="checkbox")
+          label(for="select-all") Seleccionar todos
       form.cart-page__form(action="")
-        +product-cart
-        +product-cart
-        +product-cart
-        +product-cart
-        .cart-page__fixed
-          .container
-            .cart-page__all
-              input(type="checkbox", name="")
-              span Todo
-            .cart-page__wrap
-              p.cart-page__price
-                span S/
-                span 10.00
-              button.cart-page__button(type="submit") Pagar <span>(0)</span>
+        .cart-page__products
+          +product-cart
+          +product-cart
+          +product-cart
+          +product-cart
+        .card-cart
+          .card-cart__title Resumen del pedido
+          ul.card-cart__details
+            li <span>Subtotal</span><span>S/<span>50.00</span></span>
+            li <span>Delivery</span><span>S/<span>5.00</span></span>
+            li <span>Total</span><span class="card-cart__price" >S/<span>55.00</span></span>
+          button.button.card-cart__button Comprar
+
+        

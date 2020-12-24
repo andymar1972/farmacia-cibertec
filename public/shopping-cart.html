@@ -24,10 +24,10 @@
     <meta name="twitter:description" content="Descripción"/>
     <meta name="twitter:image:src" content=""/>
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1605075528742"/>
-    <script src="assets/fontawesome/js/all.min.js?t=1605075528742"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1608824214195"/>
+    <script src="assets/fontawesome/js/all.min.js?t=1608824214195"></script>
     <!--STYLE BASE-->
-    <link rel="stylesheet" href="css/styles.css?t=1605075528742"/>
+    <link rel="stylesheet" href="css/styles.css?t=1608824214195"/>
     <title>Farmacia-Cibertec | Carrito Compras</title>
     <meta name="description" content="Descripccion"/>
   </head>
@@ -89,123 +89,94 @@
         </div>
       </div>
     </header>
-    <div class="cart-page section">
+    <div class="cart-page section section--bottom">
       <div class="cart-page__container container">
-        <h2 class="cart-page__title title">Carrito de compras <span>(4)</span></h2>
+        <div class="cart-page__select">
+          <h2 class="cart-page__title title">Carrito de compras <span>(4)</span></h2>
+          <div class="cart-page__all">
+            <input id="select-all" type="checkbox"/>
+            <label for="select-all">Seleccionar todos</label>
+          </div>
+        </div>
         <form class="cart-page__form" action="">
-          <article class="product-cart">
-            <input class="product-cart__checkbox" type="checkbox" name=""/>
-            <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
-            <div class="product-cart__data"><a href="#">
-                <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
-              <p class="product-cart__condition">Nuevo</p>
-              <div class="product-cart__flex">
-                <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
-                <div class="input-number">
-                  <button class="input-number__button"><i class="fas fa-minus"></i></button>
-                  <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
-                  <button class="input-number__button"><i class="fas fa-plus"></i></button>
+          <div class="cart-page__products">
+            <article class="product-cart">
+              <input class="product-cart__checkbox" type="checkbox" name=""/>
+              <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
+              <div class="product-cart__data"><a href="#">
+                  <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
+                <p class="product-cart__condition">Nuevo</p>
+                <div class="product-cart__flex">
+                  <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
+                  <div class="input-number">
+                    <button class="input-number__button"><i class="fas fa-minus"></i></button>
+                    <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
+                    <button class="input-number__button"><i class="fas fa-plus"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="product-cart">
-            <input class="product-cart__checkbox" type="checkbox" name=""/>
-            <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
-            <div class="product-cart__data"><a href="#">
-                <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
-              <p class="product-cart__condition">Nuevo</p>
-              <div class="product-cart__flex">
-                <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
-                <div class="input-number">
-                  <button class="input-number__button"><i class="fas fa-minus"></i></button>
-                  <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
-                  <button class="input-number__button"><i class="fas fa-plus"></i></button>
+            </article>
+            <article class="product-cart">
+              <input class="product-cart__checkbox" type="checkbox" name=""/>
+              <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
+              <div class="product-cart__data"><a href="#">
+                  <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
+                <p class="product-cart__condition">Nuevo</p>
+                <div class="product-cart__flex">
+                  <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
+                  <div class="input-number">
+                    <button class="input-number__button"><i class="fas fa-minus"></i></button>
+                    <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
+                    <button class="input-number__button"><i class="fas fa-plus"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="product-cart">
-            <input class="product-cart__checkbox" type="checkbox" name=""/>
-            <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
-            <div class="product-cart__data"><a href="#">
-                <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
-              <p class="product-cart__condition">Nuevo</p>
-              <div class="product-cart__flex">
-                <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
-                <div class="input-number">
-                  <button class="input-number__button"><i class="fas fa-minus"></i></button>
-                  <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
-                  <button class="input-number__button"><i class="fas fa-plus"></i></button>
+            </article>
+            <article class="product-cart">
+              <input class="product-cart__checkbox" type="checkbox" name=""/>
+              <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
+              <div class="product-cart__data"><a href="#">
+                  <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
+                <p class="product-cart__condition">Nuevo</p>
+                <div class="product-cart__flex">
+                  <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
+                  <div class="input-number">
+                    <button class="input-number__button"><i class="fas fa-minus"></i></button>
+                    <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
+                    <button class="input-number__button"><i class="fas fa-plus"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="product-cart">
-            <input class="product-cart__checkbox" type="checkbox" name=""/>
-            <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
-            <div class="product-cart__data"><a href="#">
-                <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
-              <p class="product-cart__condition">Nuevo</p>
-              <div class="product-cart__flex">
-                <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
-                <div class="input-number">
-                  <button class="input-number__button"><i class="fas fa-minus"></i></button>
-                  <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
-                  <button class="input-number__button"><i class="fas fa-plus"></i></button>
+            </article>
+            <article class="product-cart">
+              <input class="product-cart__checkbox" type="checkbox" name=""/>
+              <figure class="product-cart__img"><img src="assets/img/product.jpg" alt="imagen"/></figure>
+              <div class="product-cart__data"><a href="#">
+                  <h3 class="product-cart__title">Protector Solar Frezyderm Velvet Face Color SPF 50 x 50 ml + Neceser de Regalo</h3></a>
+                <p class="product-cart__condition">Nuevo</p>
+                <div class="product-cart__flex">
+                  <p class="product-cart__price"><span>S/</span><span>10.00</span></p>
+                  <div class="input-number">
+                    <button class="input-number__button"><i class="fas fa-minus"></i></button>
+                    <input class="product-cart__quantity input" type="number" name="" placeholder="Cantidad" value="1"/>
+                    <button class="input-number__button"><i class="fas fa-plus"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <div class="cart-page__fixed">
-            <div class="container">
-              <div class="cart-page__all">
-                <input type="checkbox" name=""/><span>Todo</span>
-              </div>
-              <div class="cart-page__wrap">
-                <p class="cart-page__price"><span>S/</span><span>10.00</span></p>
-                <button class="cart-page__button" type="submit">Pagar <span>(0)</span></button>
-              </div>
-            </div>
+            </article>
+          </div>
+          <div class="card-cart">
+            <div class="card-cart__title">Resumen del pedido</div>
+            <ul class="card-cart__details">
+              <li><span>Subtotal</span><span>S/<span>50.00</span></span></li>
+              <li><span>Delivery</span><span>S/<span>5.00</span></span></li>
+              <li><span>Total</span><span class="card-cart__price" >S/<span>55.00</span></span></li>
+            </ul>
+            <button class="button card-cart__button">Comprar</button>
           </div>
         </form>
       </div>
     </div>
-    <footer class="footer section">
-      <div class="footer__container container">
-        <div class="footer__grid">
-          <div class="footer__item">
-            <h3 class="footer__title">Links</h3>
-            <ul class="footer__list">
-              <li class="footer__link"><a href="#">Inicio</a></li>
-              <li class="footer__link"><a href="#">Categorias</a></li>
-              <li class="footer__link"><a href="#">Conocenos</a></li>
-              <li class="footer__link"><a href="#">Servicios</a></li>
-              <li class="footer__link"><a href="#">Productos</a></li>
-              <li class="footer__link"><a href="#">Contactenos</a></li>
-            </ul>
-          </div>
-          <div class="footer__item">
-            <h3 class="footer__title">Suscripción</h3>
-            <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias</p>
-            <form class="footer__form" action="#" method="post">
-              <input class="input" type="text" placeholder="Correo electronico"/>
-              <input class="button" type="submit" value="Enviar"/>
-            </form>
-          </div>
-          <div class="footer__item">
-            <h3 class="footer__title">Redes sociales</h3>
-            <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <div class="footer__networks social-networks"><a class="social-networks__item" href="#"><i class="fab fa-facebook-f"></i></a><a class="social-networks__item" href="#"><i class="fab fa-instagram"></i></a><a class="social-networks__item" href="#"><i class="fab fa-twitter"></i></a><a class="social-networks__item" href="#"><i class="fab fa-youtube"></i></a><a class="social-networks__item" href="#"><i class="fab fa-linkedin-in"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="credits">
-        <div class="credits__container container">
-          <p class="credits__paragraph">Desarrollado por <a href="#">TeamCibertec</a></p>
-        </div>
-      </div>
-    </footer>
-    <script src="js/scripts-min.js?t=1605075528742"></script>
+    <script src="js/scripts-min.js?t=1608824214195"></script>
   </body>
 </html>
